@@ -1,0 +1,23 @@
+/* Global reset for margin/padding to ensure full-page layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and HTML settings to take full height of the screen */
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Flex container for full-page layout */
+.main-content {
+  padding-top: 80px; /* Space for fixed navbar */
+  flex-grow: 1; /* This ensures that the content area grows to take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures content stays at the top */
+}
+

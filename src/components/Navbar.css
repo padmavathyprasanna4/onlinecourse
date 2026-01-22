@@ -1,0 +1,54 @@
+/* Ensure Navbar takes full width and sticks to the top */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E2A47;
+  padding: 20px 40px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fixed to the top */
+  top: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* Keep it above other content */
+  margin-bottom: 100px;
+}
+
+.navbar-logo-img {
+  width: 70px; /* Adjust width based on your logo size */
+  height: auto;
+}
+.navbar-logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  
+  margin-left: 20px;
+}
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links li {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-links li a:hover {
+  color: #4CAF50;
+  text-decoration: underline;
+}
+
+.navbar-links li a.active {
+  color: #4CAF50;
+  font-weight: bold;
+}

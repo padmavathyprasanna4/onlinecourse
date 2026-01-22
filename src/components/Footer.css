@@ -1,0 +1,41 @@
+/* Footer Styling */
+footer {
+  background-color: #1E2A47;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  width: 100%; /* Full width */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-top: auto; /* Ensures the footer stays at the bottom */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-content a {
+  color: white!important;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-bottom: 10px;
+   color: white!important;
+}
